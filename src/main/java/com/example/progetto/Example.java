@@ -6,5 +6,6 @@ public class Example {
     public int bello;
     public Example(){
         this.ciao=1;
+        this.bello=2;
     }
 }
