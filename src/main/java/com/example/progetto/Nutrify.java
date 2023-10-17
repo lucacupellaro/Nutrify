@@ -10,7 +10,7 @@ import java.io.IOException;
 public class Nutrify extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Nutrify.class.getResource("/aut/first-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Nutrify.class.getResource("/aut/Login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 500, 500);
         stage.setTitle("Nutrify");
         stage.setScene(scene);
