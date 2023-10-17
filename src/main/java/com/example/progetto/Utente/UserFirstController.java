@@ -1,4 +1,4 @@
-package com.example.progetto;
+package com.example.progetto.Utente;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -6,11 +6,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-public class HelloController {
+public class UserFirstController{
+
 
 
     private Stage stage;
@@ -21,10 +20,10 @@ public class HelloController {
 
 
     @FXML
-    protected void Login(ActionEvent event) throws Exception {
+    protected void Pagamento(ActionEvent event) throws Exception {
 
 
-        root = FXMLLoader.load(getClass().getResource("/aut/Autentication.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/aut/Utente/Pagamento.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

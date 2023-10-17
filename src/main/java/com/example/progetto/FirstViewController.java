@@ -8,7 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Login {
+public class FirstViewController {
 
 
     private Stage stage;
@@ -19,10 +19,10 @@ public class Login {
 
 
     @FXML
-    protected void Registrazione(ActionEvent event) throws Exception {
+    protected void Login(ActionEvent event) throws Exception {
 
 
-        root = FXMLLoader.load(getClass().getResource("/aut/Registrazione.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/aut/Autentication.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
@@ -30,16 +30,11 @@ public class Login {
 
     }
 
-    public void Back(ActionEvent event) throws Exception {
 
 
-        root = FXMLLoader.load(getClass().getResource("/aut/first-view.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
 
-    }
+
+
 
 
 
