@@ -11,14 +11,14 @@ public class SwitchPage {
 
     static int x=800;
     static int y=500;
-    static public Scene setStage(Stage stage, String toscene) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(SwitchPage.class.getResource(toscene));
+    static public Scene setStage(Stage stage, String toScene) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(SwitchPage.class.getResource(toScene));
         Parent load = fxmlLoader.load();
         //fxmlLoader.<ControllerBase>getController().setA(this);
-        Scene scena = new Scene(load, x, y);
+        Scene scene = new Scene(load, x, y);
         stage.setResizable(false);
-        stage.setScene(scena);
+        stage.setScene(scene);
         stage.show();
-        return scena;
+        return scene;
     }
 }
