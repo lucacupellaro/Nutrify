@@ -1,23 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" fx:controller="com.example.progetto.Utente.UserFirstController" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1176.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto.Utente.UserFirstController">
    <children>
-      <Button layoutX="238.0" layoutY="121.0" mnemonicParsing="false" text="Submit" onAction="#Pagamento" />
-      <Text layoutX="238.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prezzo" />
-      <Line endX="286.33331298828125" endY="1.52587890625E-5" layoutX="251.0" layoutY="182.0" startX="-100.0" />
-      <Text layoutX="239.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recensioni:" />
+      <Pane layoutY="-2.0" prefHeight="730.0" prefWidth="265.0" style="-fx-background-color: FEC020FF;">
+         <children>
+            <Text layoutX="80.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="NomeUtente" wrappingWidth="118.70052337646484" />
+            <Separator layoutY="79.0" prefHeight="27.0" prefWidth="265.0" />
+            <Button layoutY="95.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="265.0" style="-fx-background-color: #4287f5;" text="IL mio piano nutrizionale" />
+            <Button layoutY="144.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="265.0" style="-fx-background-color: #4287f5;" text="Modifica dati" />
+            <Button layoutY="195.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="265.0" style="-fx-background-color: #4287f5;" text="LogOut" />
+         </children>
+      </Pane>
+      <ScrollPane hbarPolicy="NEVER" layoutX="265.0" prefHeight="724.0" prefWidth="909.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="730.0" prefWidth="895.0">
+               <children>
+                  <Pane layoutX="12.0" layoutY="14.0" prefHeight="127.0" prefWidth="877.0" style="-fx-background-color: rgb(50,50,50);" AnchorPane.bottomAnchor="589.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="14.0">
+                     <children>
+                        <ImageView fitHeight="119.0" fitWidth="153.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Image/Google.png" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="135.0" orientation="VERTICAL" prefHeight="127.0" prefWidth="6.0" />
+                        <Button layoutX="766.0" layoutY="67.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #4287f5;" text="Dettagli" />
+                        <Button layoutX="767.0" layoutY="17.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #4287f5;" text="Abbonati" />
+                        <Text layoutX="147.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 20;" text="Nome:" />
+                        <Text layoutX="148.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 20;" text="Descrizione:" />
+                     </children></Pane>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
-      <Text layoutX="239.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome:" />
-
-      <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="119.0" text="Button" />
-      <Button layoutY="66.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="119.0" text="Modifica dati" />
-      <Button layoutY="135.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="119.0" text="La mia ricetta" />
-      <Button layoutY="205.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="119.0" text="Logout" />
+      
    </children>
 </Pane>

@@ -24,6 +24,7 @@ public class RegistrationController{
 
         root = FXMLLoader.load(getClass().getResource("/firstGui/Login.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

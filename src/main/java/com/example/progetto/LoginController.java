@@ -24,6 +24,7 @@ public class LoginController {
 
         root = FXMLLoader.load(getClass().getResource("/firstGui/Registration.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
@@ -35,6 +36,7 @@ public class LoginController {
 
         root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/UserFirst.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

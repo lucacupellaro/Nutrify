@@ -13,6 +13,7 @@ public class Nutrify extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Nutrify.class.getResource("/firstView/FirstView.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Nutrify");
+        stage.setResizable(false);
         stage.setScene(scene);
         stage.show();
     }
