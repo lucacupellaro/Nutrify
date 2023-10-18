@@ -26,7 +26,7 @@
             <Hyperlink alignment="CENTER" layoutX="127.0" layoutY="439.0" prefHeight="55.0" prefWidth="247.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="Registrati con Google" />
             <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="323.0" layoutY="447.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Image/Google.png" />
+                  <Image url="@Image/Google.png" />
                </image>
             </ImageView>
             <PasswordField id="password" alignment="CENTER" layoutX="139.0" layoutY="282.0" prefHeight="26.0" prefWidth="220.0" promptText="Password" style="-fx-background-color: white; -fx-background-radius: 15;" />

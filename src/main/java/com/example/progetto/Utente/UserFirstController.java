@@ -23,7 +23,7 @@ public class UserFirstController{
     protected void Pagamento(ActionEvent event) throws Exception {
 
 
-        root = FXMLLoader.load(getClass().getResource("/aut/Utente/Pagamento.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/Pagamento.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

@@ -22,7 +22,7 @@ public class RegistrationController{
     @FXML
     protected void switchLogin(ActionEvent event) throws Exception {
 
-        root = FXMLLoader.load(getClass().getResource("/aut/Login.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/firstGui/Login.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
