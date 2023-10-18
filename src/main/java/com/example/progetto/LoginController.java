@@ -19,7 +19,7 @@ public class LoginController {
 
 
     @FXML
-    public void switchRegistration(ActionEvent event) throws Exception {
+    protected void Registrazione(ActionEvent event) throws Exception {
 
 
         root = FXMLLoader.load(getClass().getResource("/aut/Registration.fxml"));
@@ -30,15 +30,7 @@ public class LoginController {
 
     }
 
-    public void switchLogin(ActionEvent event) throws Exception {
-        root = FXMLLoader.load(getClass().getResource("/Aut/Login.fxml"));
-        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    public void login(ActionEvent event) throws Exception {
+    public void UserFirst(ActionEvent event) throws Exception {
 
 
         root = FXMLLoader.load(getClass().getResource("/aut/Utente/UserFirst.fxml"));
@@ -48,7 +40,6 @@ public class LoginController {
         stage.show();
 
     }
-
 
 
 
