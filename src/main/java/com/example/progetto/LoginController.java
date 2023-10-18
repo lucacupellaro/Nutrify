@@ -19,7 +19,7 @@ public class LoginController {
 
 
     @FXML
-    protected void Registrazione(ActionEvent event) throws Exception {
+    protected void switchRegistration(ActionEvent event) throws Exception {
 
 
         root = FXMLLoader.load(getClass().getResource("/aut/Registration.fxml"));
@@ -30,7 +30,7 @@ public class LoginController {
 
     }
 
-    public void UserFirst(ActionEvent event) throws Exception {
+    public void userFirst(ActionEvent event) throws Exception {
 
 
         root = FXMLLoader.load(getClass().getResource("/aut/Utente/UserFirst.fxml"));

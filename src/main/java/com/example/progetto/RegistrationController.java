@@ -8,7 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class RegistrazioneController{
+public class RegistrationController{
 
 
 
@@ -20,7 +20,7 @@ public class RegistrazioneController{
 
 
     @FXML
-    protected void Login(ActionEvent event) throws Exception {
+    protected void switchLogin(ActionEvent event) throws Exception {
 
         root = FXMLLoader.load(getClass().getResource("/aut/Login.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
