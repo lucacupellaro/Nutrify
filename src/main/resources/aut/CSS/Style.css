@@ -1,0 +1,10 @@
+.switchButton{
+    -fx-background-radius: 20;
+    -fx-background-color:  rgba(254,192,32,255);
+
+}
+
+.switchButton:hover{
+    -fx-background-color: #4287f5;
+    -fx-cursor: hand;
+}
