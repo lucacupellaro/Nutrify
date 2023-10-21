@@ -6,7 +6,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
+
+import java.text.Format;
+
 
 public class LoginController {
 
@@ -14,6 +18,30 @@ public class LoginController {
     private Stage stage;
     private Scene scene;
     private Parent root;
+
+    public TextField myTextField;
+
+    public Button myButton;
+
+    public Label myLabel;
+
+    String email;
+
+    public void submit(ActionEvent event){
+
+        try {
+            email = myTextField.getText();
+            myLabel.setText("campi non validi");
+        }
+
+        catch(Exception e){
+
+
+            System.out.println(e);
+        }
+    }
+
+
 
 
 
@@ -31,6 +59,7 @@ public class LoginController {
 
     }
 
+    /*
     public void userFirst(ActionEvent event) throws Exception {
 
 
@@ -42,7 +71,7 @@ public class LoginController {
         stage.show();
 
     }
-
+   */
 
 
 
