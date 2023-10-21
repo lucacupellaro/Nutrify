@@ -20,16 +20,43 @@ public class UserFirstController{
 
 
     @FXML
-    protected void Pagamento(ActionEvent event) throws Exception {
+    public void switchHome(ActionEvent event) throws Exception {
 
 
-        root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/Pagamento.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/UserFirst/UserFirstHome.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setResizable(false);
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
 
     }
+
+    public void switchRecipes(ActionEvent event) throws Exception {
+
+
+        root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/UserFirst/UserFirstRecipes.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setResizable(false);
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+    public void switchPlan(ActionEvent event) throws Exception {
+
+
+        root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/UserFirst/UserFirstPlan.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setResizable(false);
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+
 
 
 

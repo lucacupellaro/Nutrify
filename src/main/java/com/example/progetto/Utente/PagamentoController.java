@@ -23,7 +23,7 @@ public class PagamentoController{
     protected void back(ActionEvent event) throws Exception {
 
 
-        root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/UserFirst.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/UserFirst/UserFirstHome.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
