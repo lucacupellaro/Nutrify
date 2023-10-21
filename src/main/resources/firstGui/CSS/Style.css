@@ -1,7 +1,7 @@
 .switchButton{
     -fx-background-radius: 20;
     -fx-background-color:  rgba(254,192,32,255);
-
+    -fx-text-fill:white;
 }
 
 .switchButton:hover{
