@@ -56,6 +56,15 @@ public class UserFirstController{
 
     }
 
+    public void viewDetails(ActionEvent event) throws Exception{
+        root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/UserFirst/ViewNutrizionista.fxml"));
+        stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        stage.setResizable(false);
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
 
 
 

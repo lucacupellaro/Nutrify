@@ -27,7 +27,7 @@ public class LoginController {
 
     String email;
 
-    public void submit(ActionEvent event){
+    /*public void submit(ActionEvent event){
 
         try {
             email = myTextField.getText();
@@ -39,7 +39,7 @@ public class LoginController {
 
             System.out.println(e);
         }
-    }
+    }*/
 
 
 
@@ -59,7 +59,7 @@ public class LoginController {
 
     }
 
-    /*
+
     public void userFirst(ActionEvent event) throws Exception {
 
 
@@ -71,7 +71,7 @@ public class LoginController {
         stage.show();
 
     }
-   */
+
 
 
 

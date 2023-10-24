@@ -58,7 +58,7 @@
                            </image>
                         </ImageView>
                         <Separator layoutX="135.0" orientation="VERTICAL" prefHeight="127.0" prefWidth="6.0" />
-                        <Button layoutX="711.0" layoutY="63.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #4287f5;" text="Dettagli" />
+                        <Button layoutX="711.0" layoutY="63.0" mnemonicParsing="false" onAction="#viewDetails" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #4287f5;" text="Dettagli" />
                         <Button layoutX="710.0" layoutY="12.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="98.0" style="-fx-background-color: #4287f5;" text="Abbonati" />
                         <Text layoutX="147.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 20;" text="Nome:" />
                         <Text layoutX="148.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-fill: white; -fx-font-size: 20;" text="Descrizione:" />
