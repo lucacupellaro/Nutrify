@@ -11,27 +11,34 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="878.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto.LoginController">
-    <children>
-        <Button layoutX="430.0" layoutY="543.0" mnemonicParsing="false" onAction="#switchRegistration" prefHeight="39.0" prefWidth="116.0" style="-fx-text-alignment: right;" styleClass="switchButton" stylesheets="@CSS/Style.css" text="Registrati" textFill="WHITE" />
-        <Pane prefHeight="589.0" prefWidth="454.0" style="-fx-background-color: rgba(254,192,32,255);">
-            <children>
-                <Text fill="WHITE" layoutX="157.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: center;" text="Login" wrappingWidth="185.85287475585938">
-                    <font>
-                        <Font size="30.0" />
-                    </font>
-                </Text>
-                <TextField id="emailField" fx:id="myTextField" layoutX="141.0" layoutY="207.0" prefHeight="26.0" prefWidth="220.0" promptText="Email" style="-fx-background-color: white; -fx-background-radius: 15; -fx-alignment: center;" />
-                <Hyperlink alignment="CENTER" layoutX="126.0" layoutY="374.0" prefHeight="55.0" prefWidth="247.0" style="-fx-background-color: white; -fx-background-radius: 15;" text="Login con google" />
-                <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="323.0" layoutY="382.0" pickOnBounds="true" preserveRatio="true">
-                    <image>
-                        <Image url="@Image/Google.png" />
-                    </image>
-                </ImageView>
-                <PasswordField id="password" alignment="CENTER" layoutX="141.0" layoutY="261.0" prefHeight="26.0" prefWidth="220.0" promptText="Password" style="-fx-background-color: white; -fx-background-radius: 15;" />
-                <Button fx:id="myButton" layoutX="180.0" layoutY="314.0" mnemonicParsing="false" onAction="#userFirst" prefHeight="39.0" prefWidth="140.0" style="-fx-background-color: #4287f5; -fx-background-radius: 15;" text="Login" />
-            <Label fx:id="myLabel" layoutX="182.0" layoutY="149.0" prefHeight="17.0" prefWidth="140.0" text="Label" />
-            </children>
-        </Pane>
-    </children>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0"
+      prefWidth="878.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.progetto.LoginController">
+    <Button layoutX="430.0" layoutY="543.0" mnemonicParsing="false" onAction="#switchRegistration" prefHeight="39.0"
+            prefWidth="116.0" style="-fx-text-alignment: right;" styleClass="switchButton" stylesheets="@CSS/Style.css"
+            text="Registrati" textFill="WHITE"/>
+    <Pane prefHeight="589.0" prefWidth="454.0" style="-fx-background-color: rgba(254,192,32,255);">
+        <Text fill="WHITE" layoutX="157.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              style="-fx-text-alignment: center;" text="Login" wrappingWidth="185.85287475585938">
+            <font>
+                <Font size="30.0"/>
+            </font>
+        </Text>
+        <TextField id="emailField" fx:id="myTextField" layoutX="141.0" layoutY="207.0" prefHeight="26.0"
+                   prefWidth="220.0" promptText="Email"
+                   style="-fx-background-color: white; -fx-background-radius: 15; -fx-alignment: center;"/>
+        <Hyperlink alignment="CENTER" layoutX="126.0" layoutY="374.0" prefHeight="55.0" prefWidth="247.0"
+                   style="-fx-background-color: white; -fx-background-radius: 15;" text="Login con google"/>
+        <ImageView fitHeight="39.0" fitWidth="44.0" layoutX="323.0" layoutY="382.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@Image/Google.png"/>
+        </ImageView>
+        <PasswordField id="password" alignment="CENTER" layoutX="141.0" layoutY="261.0" prefHeight="26.0"
+                       prefWidth="220.0" promptText="Password"
+                       style="-fx-background-color: white; -fx-background-radius: 15;"/>
+        <Button fx:id="myButton" layoutX="180.0" layoutY="314.0" mnemonicParsing="false" onAction="#userFirst"
+                prefHeight="39.0" prefWidth="140.0"
+                style="-fx-background-color: #4287f5; -fx-background-radius: 15;" text="Login"/>
+        <Label fx:id="myLabel" layoutX="182.0" layoutY="149.0" prefHeight="17.0" prefWidth="140.0" text="Label"/>
+    </Pane>
 </Pane>
