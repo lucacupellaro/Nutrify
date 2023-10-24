@@ -23,11 +23,9 @@
         <Separator layoutY="79.0" prefHeight="27.0" prefWidth="265.0" />
       <Button layoutX="13.0" layoutY="122.0" mnemonicParsing="false" onAction="#switchHome" prefHeight="69.0" prefWidth="241.0" styleClass="dashboardButton" text="Torna alla home">
          <graphic>
-            <ImageView fitHeight="41.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../Image/Icons/home.png" />
-               </image>
-            </ImageView>
+             <ImageView fitHeight="41.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                 <Image url="@../../Image/Icons/home.png"/>
+             </ImageView>
          </graphic>
       </Button>
     </Pane>
