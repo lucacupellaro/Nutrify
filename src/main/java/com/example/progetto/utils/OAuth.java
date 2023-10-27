@@ -30,15 +30,14 @@ public class OAuth {
 
 
     public static String generateQuery() throws NoSuchAlgorithmException, IOException{
-        FileInputStream f = null;
+        Properties cfg = new Properties();
         try {
-            f = new FileInputStream(Objects.requireNonNull(OAuth.class.getResource("/Config/Cfg.properties")).toString().replace("file:", ""));
-        }catch(FileNotFoundException e){
+            FileInputStream f = new FileInputStream(Objects.requireNonNull(OAuth.class.getResource("/Config/Cfg.properties")).toString().replace("file:", ""));
+            cfg.load(f);
+            f.close();
+        }catch(FileNotFoundException e) {
             e.getStackTrace();
         }
-        Properties cfg = new Properties();
-        cfg.load(f);
-        Objects.requireNonNull(f).close();
         String state = OAuth.random64Url(32);
         String codeVerifier = OAuth.random64Url(32);
         String codeChallenge = OAuth.generateChallenge(codeVerifier);
