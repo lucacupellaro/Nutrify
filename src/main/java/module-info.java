@@ -1,6 +1,7 @@
 module com.example.progetto {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.web;
 
 
     opens com.example.progetto to javafx.fxml;

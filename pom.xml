@@ -57,6 +57,17 @@
             <artifactId>google-api-client</artifactId>
             <version>1.32.1</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>31.0.1-jre</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-web</artifactId>
+            <version>20.0.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
