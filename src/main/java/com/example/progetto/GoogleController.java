@@ -7,7 +7,6 @@ import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 
 import java.net.URL;
-import java.security.NoSuchAlgorithmException;
 import java.util.ResourceBundle;
 
 public class GoogleController implements Initializable {
@@ -15,10 +14,9 @@ public class GoogleController implements Initializable {
     @FXML
     private WebView webView;
 
-    private WebEngine engine;
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-
+        WebEngine engine;
         try{
             engine = webView.getEngine();
             engine.load(OAuth.generateQuery());
