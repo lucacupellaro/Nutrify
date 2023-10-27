@@ -1,22 +1,16 @@
 package com.example.progetto.utils;
 
-import java.io.UnsupportedEncodingException;
+import java.io.*;
+import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.Objects;
+import java.util.Properties;
 
 public class OAuth {
-    private String clientID;
-    private String clientSecret;
-    private String authorizationEndpoint;
-    private String tokenEndpoint;
-    private String userInfoEndpoint;
 
-    public OAuth(){
-        clientID=new String("47629690745-q31tr55cdogq86m2oak44o4an2dm8661.apps.googleusercontent.com");
-
-    }
     //funzione per la creazione di una stringa casuale di lunghezza length
     public static String random64Url(int length){
         SecureRandom rng = new SecureRandom(); //oggetto di tipo SecureRandom che mi consentirà di generare un numero di byte casuali
@@ -40,14 +34,22 @@ public class OAuth {
         return sha256.digest(bytes);
     }
 
-    public static String escape(String s){
-        return s.replace("\\", "\\\\")
-                .replace("\t", "\\t")
-                .replace("\b", "\\b")
-                .replace("\n", "\\n")
-                .replace("\r", "\\r")
-                .replace("\f", "\\f")
-                .replace("\'", "\\'")      // <== not necessary
-                .replace("\"", "\\\"");
+    public static String generateQuery() throws NoSuchAlgorithmException, IOException{
+        FileInputStream f = new FileInputStream(OAuth.class.getResource("/Config/Cfg.properties").toString().replace("file:",""));
+        Properties cfg = new Properties();
+        cfg.load(f);
+        String state = OAuth.random64Url(32);
+        String codeVerifier = OAuth.random64Url(32);
+        String codeChallenge = OAuth.random64UrlNoPadding(sha256(codeVerifier));
+        String reference = "none";
+        return String.format("%s?response_type=code&scope=%s&redirect_uri=%s&client_id=%s&state=%s&code_challenge=%s&code_challenge_method=%s",
+                cfg.getProperty("authorizationEndPoint"),
+                cfg.getProperty("scope"),
+                reference,
+                cfg.getProperty("clientID"),
+                state,
+                codeChallenge,
+                cfg.getProperty("codeChallengeMethod")
+        );
     }
 }
