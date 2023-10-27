@@ -1,7 +1,6 @@
 package com.example.progetto.utils;
 
 import java.io.*;
-import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -35,9 +34,10 @@ public class OAuth {
     }
 
     public static String generateQuery() throws NoSuchAlgorithmException, IOException{
-        FileInputStream f = new FileInputStream(OAuth.class.getResource("/Config/Cfg.properties").toString().replace("file:",""));
+        FileInputStream f = new FileInputStream(Objects.requireNonNull(OAuth.class.getResource("/Config/Cfg.properties")).toString().replace("file:",""));
         Properties cfg = new Properties();
         cfg.load(f);
+        f.close();
         String state = OAuth.random64Url(32);
         String codeVerifier = OAuth.random64Url(32);
         String codeChallenge = OAuth.random64UrlNoPadding(sha256(codeVerifier));
