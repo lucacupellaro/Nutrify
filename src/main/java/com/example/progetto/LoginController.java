@@ -19,13 +19,13 @@ public class LoginController {
     private Scene scene;
     private Parent root;
 
-    private static TextField myTextField;
+    public TextField myTextField;
 
     public Button myButton;
 
     public Label myLabel;
 
-   // String email;
+    String email;
 
     /*public void submit(ActionEvent event){
 
