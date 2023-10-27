@@ -1,6 +1,5 @@
 package com.example.progetto;
 
-import com.example.progetto.utils.OAuth;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -11,13 +10,7 @@ import javafx.scene.control.*;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-import java.net.URL;
-import java.nio.charset.StandardCharsets;
-import java.text.Format;
-import java.util.ResourceBundle;
 
-import javafx.application.HostServices;
 
 
 
@@ -83,7 +76,7 @@ public class LoginController{
         Stage popUpStage = new Stage();
         Scene popUpScene = new Scene(popUpRoot);
         popUpStage.setTitle("Google login");
-        //popUpStage.setResizable(false);
+        popUpStage.setResizable(false);
         popUpStage.setScene(popUpScene);
         popUpStage.initModality(Modality.WINDOW_MODAL);
         popUpStage.show();
