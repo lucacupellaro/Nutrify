@@ -38,7 +38,7 @@ public class OAuth {
         }
         Properties cfg = new Properties();
         cfg.load(f);
-        f.close();
+        Objects.requireNonNull(f).close();
         String state = OAuth.random64Url(32);
         String codeVerifier = OAuth.random64Url(32);
         String codeChallenge = OAuth.generateChallenge(codeVerifier);
