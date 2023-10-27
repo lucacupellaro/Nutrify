@@ -14,7 +14,6 @@ public class SwitchPage {
     static public Scene setStage(Stage stage, String toscene) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(SwitchPage.class.getResource(toscene));
         Parent load = fxmlLoader.load();
-        //fxmlLoader.<ControllerBase>getController().setA(this);
         Scene scena = new Scene(load, x, y);
         stage.setResizable(false);
         stage.setScene(scena);
