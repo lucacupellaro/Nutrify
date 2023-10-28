@@ -12,6 +12,7 @@ import java.util.Properties;
 
 public class OAuth {
 
+    private OAuth(){}
     //funzione per la creazione di una stringa casuale di lunghezza length
     public static String random64Url(int length){
         SecureRandom secureRandom = new SecureRandom();
