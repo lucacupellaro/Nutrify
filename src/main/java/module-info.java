@@ -6,8 +6,8 @@ module com.example.progetto {
 
     opens com.dicii.ispw.project to javafx.fxml;
     exports com.dicii.ispw.project;
-    exports com.dicii.ispw.project.Utente;
-    opens com.dicii.ispw.project.Utente to javafx.fxml;
+    exports com.dicii.ispw.project.utente;
+    opens com.dicii.ispw.project.utente to javafx.fxml;
     exports com.dicii.ispw.project.utils;
     opens com.dicii.ispw.project.utils to javafx.fxml;
 }

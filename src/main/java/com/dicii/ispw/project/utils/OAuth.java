@@ -31,7 +31,7 @@ public class OAuth {
 
     public static String generateQuery() throws NoSuchAlgorithmException, IOException{
         Properties cfg = new Properties();
-        try(FileInputStream f = new FileInputStream(Objects.requireNonNull(OAuth.class.getResource("/Config/Cfg.properties")).toString().replace("file:", ""))) {
+        try(FileInputStream f = new FileInputStream(Objects.requireNonNull(OAuth.class.getResource("/config/Cfg.properties")).toString().replace("file:", ""))) {
             cfg.load(f);
         }catch(FileNotFoundException e) {
             e.getStackTrace();
