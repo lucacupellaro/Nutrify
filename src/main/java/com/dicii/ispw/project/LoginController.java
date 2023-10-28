@@ -21,29 +21,6 @@ public class LoginController{
     private Scene scene;
     private Parent root;
 
-    public TextField myTextField;
-
-    public Button myButton;
-
-    public Label myLabel;
-
-
-    String email;
-
-    public void submit(ActionEvent event){
-
-        try {
-            email = myTextField.getText();
-            myLabel.setText("campi non validi");
-        }
-
-        catch(Exception e){
-
-
-            System.out.println(e);
-        }
-    }
-
 
     @FXML
     protected void switchRegistration(ActionEvent event) throws Exception {
