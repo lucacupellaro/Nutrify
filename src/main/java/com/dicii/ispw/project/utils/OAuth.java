@@ -21,7 +21,7 @@ public class OAuth {
         return Base64.getUrlEncoder().withoutPadding().encodeToString(codeVerifier);
     }
 
-    public static String generateChallenge(String codeVerifier) throws NoSuchAlgorithmException{
+    private static String generateChallenge(String codeVerifier) throws NoSuchAlgorithmException{
         byte[] bytes = codeVerifier.getBytes(StandardCharsets.US_ASCII);
         MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
         messageDigest.update(bytes, 0, bytes.length);
@@ -37,9 +37,9 @@ public class OAuth {
         }catch(FileNotFoundException e) {
             e.getStackTrace();
         }
-        String state = OAuth.random64Url(32);
-        String codeVerifier = OAuth.random64Url(32);
-        String codeChallenge = OAuth.generateChallenge(codeVerifier);
+        String state = random64Url(32);
+        String codeVerifier = random64Url(32);
+        String codeChallenge = generateChallenge(codeVerifier);
         return String.format("%s?response_type=code&scope=%s&redirect_uri=%s&client_id=%s&state=%s&code_challenge=%s&code_challenge_method=%s",
                 cfg.getProperty("authorizationEndPoint"),
                 cfg.getProperty("scope"),
