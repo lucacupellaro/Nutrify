@@ -48,7 +48,7 @@ public class LoginController{
 
     }
 
-    public void googleButton(ActionEvent event) throws Exception {
+    public void googleButton() throws Exception {
         Parent popUpRoot = FXMLLoader.load(getClass().getResource("/firstGui/googleLogin.fxml"));
         Stage popUpStage = new Stage();
         Scene popUpScene = new Scene(popUpRoot);
