@@ -1,6 +1,6 @@
-package com.example.progetto;
+package com.dicii.ispw.project;
 
-import com.example.progetto.utils.OAuth;
+import com.dicii.ispw.project.utils.OAuth;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.web.WebEngine;

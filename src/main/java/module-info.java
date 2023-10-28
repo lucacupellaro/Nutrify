@@ -4,10 +4,10 @@ module com.example.progetto {
     requires javafx.web;
 
 
-    opens com.example.progetto to javafx.fxml;
-    exports com.example.progetto;
-    exports com.example.progetto.Utente;
-    opens com.example.progetto.Utente to javafx.fxml;
-    exports com.example.progetto.utils;
-    opens com.example.progetto.utils to javafx.fxml;
+    opens com.dicii.ispw.project to javafx.fxml;
+    exports com.dicii.ispw.project;
+    exports com.dicii.ispw.project.Utente;
+    opens com.dicii.ispw.project.Utente to javafx.fxml;
+    exports com.dicii.ispw.project.utils;
+    opens com.dicii.ispw.project.utils to javafx.fxml;
 }

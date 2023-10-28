@@ -1,4 +1,4 @@
-package com.example.progetto.utils;
+package com.dicii.ispw.project.utils;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

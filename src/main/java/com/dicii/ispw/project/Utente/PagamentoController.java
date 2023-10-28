@@ -1,4 +1,4 @@
-package com.example.progetto;
+package com.dicii.ispw.project.Utente;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -8,7 +8,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class RegistrationController{
+public class PagamentoController{
 
 
 
@@ -20,11 +20,11 @@ public class RegistrationController{
 
 
     @FXML
-    protected void switchLogin(ActionEvent event) throws Exception {
+    protected void back(ActionEvent event) throws Exception {
 
-        root = FXMLLoader.load(getClass().getResource("/firstGui/Login.fxml"));
+
+        root = FXMLLoader.load(getClass().getResource("/firstGui/Utente/UserFirst/UserFirstHome.fxml"));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setResizable(false);
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();

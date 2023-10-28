@@ -1,4 +1,4 @@
-package com.example.progetto.utils;
+package com.dicii.ispw.project.utils;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

@@ -1,4 +1,4 @@
-package com.example.progetto.Utente;
+package com.dicii.ispw.project.Utente;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
