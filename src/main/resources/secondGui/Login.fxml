@@ -8,7 +8,7 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx"
             xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.dicii.ispw.project.LoginController"
+            fx:controller="com.dicii.ispw.project.graphicalControllers.LoginController"
             prefHeight="400.0" prefWidth="600.0">
 
 </AnchorPane>

@@ -1,4 +1,4 @@
-package com.dicii.ispw.project.utils;
+package com.dicii.ispw.project.applicationController;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -10,11 +10,11 @@ import java.util.Objects;
 import java.util.Properties;
 
 
-public class OAuth {
+public class OAuthGoogle {
 
-    private OAuth(){}
+    private OAuthGoogle(){}
     //funzione per la creazione di una stringa casuale di lunghezza length
-    public static String random64Url(int length){
+    private static String random64Url(int length){
         SecureRandom secureRandom = new SecureRandom();
         byte[] codeVerifier = new byte[length];
         secureRandom.nextBytes(codeVerifier);
@@ -32,7 +32,7 @@ public class OAuth {
 
     public static String generateQuery() throws NoSuchAlgorithmException, IOException{
         Properties cfg = new Properties();
-        try(FileInputStream f = new FileInputStream(Objects.requireNonNull(OAuth.class.getResource("/config/Cfg.properties")).toString().replace("file:", ""))) {
+        try(FileInputStream f = new FileInputStream(Objects.requireNonNull(OAuthGoogle.class.getResource("/config/Cfg.properties")).toString().replace("file:", ""))) {
             cfg.load(f);
         }catch(FileNotFoundException e) {
             e.getStackTrace();

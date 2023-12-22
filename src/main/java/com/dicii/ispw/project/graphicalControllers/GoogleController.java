@@ -1,6 +1,6 @@
-package com.dicii.ispw.project;
+package com.dicii.ispw.project.graphicalControllers;
 
-import com.dicii.ispw.project.utils.OAuth;
+import com.dicii.ispw.project.applicationController.OAuthGoogle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.web.WebEngine;
@@ -19,7 +19,7 @@ public class GoogleController implements Initializable {
         WebEngine engine;
         try{
             engine = webView.getEngine();
-            engine.load(OAuth.generateQuery());
+            engine.load(OAuthGoogle.generateQuery());
         }catch(Exception e){
             System.out.println("Errore nella generazione di WebView");
         }

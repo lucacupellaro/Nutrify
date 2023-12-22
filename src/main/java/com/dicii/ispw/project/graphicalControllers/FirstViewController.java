@@ -1,4 +1,4 @@
-package com.dicii.ispw.project;
+package com.dicii.ispw.project.graphicalControllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
