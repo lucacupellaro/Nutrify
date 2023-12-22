@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fce4fccb-7c1d-4e27-aa00-6ab1c4b2b287" name="Changes" comment="New repositories:&#10;ho implementato le bean, le view e le i controller del caso d'uso createNutrtionalPlan" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package-info" />
+        <option value="Class" />
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="https/github.com/ISPW-LA/Nutrify1.git" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lucacupellaro&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="b5eef100-5563-44e9-9573-59866d9f867f" />
+        <option name="url" value="https://github.com/lucacupellaro/Nutrify-master.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2ZcMIltUbu2t8aTouE105gD5sgV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "https/github.com/lucacupellaro/Nutrify2.git",
+    "last_opened_file_path": "C:/Users/testy/Desktop/EsempiInClasse",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="Nutrify" branch="https/github.com/ISPW-LA/Nutrify1.git" />
+    </force-push-targets>
+  </component>
+  <component name="RunManager">
+    <configuration name="Nutrify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="viewone.Nutrify" />
+      <module name="Progetto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="viewone.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Nutrify" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fce4fccb-7c1d-4e27-aa00-6ab1c4b2b287" name="Changes" comment="" />
+      <created>1702716838499</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702716838499</updated>
+      <workItem from="1702716839703" duration="777000" />
+      <workItem from="1702717630919" duration="9485000" />
+      <workItem from="1702897370599" duration="4257000" />
+      <workItem from="1702931895293" duration="79000" />
+      <workItem from="1703070059320" duration="4727000" />
+      <workItem from="1703080712817" duration="666000" />
+      <workItem from="1703081768836" duration="3455000" />
+      <workItem from="1703154619673" duration="1740000" />
+      <workItem from="1703157177571" duration="758000" />
+      <workItem from="1703162145622" duration="1642000" />
+      <workItem from="1703174022715" duration="3614000" />
+      <workItem from="1703232341304" duration="1387000" />
+      <workItem from="1703248893651" duration="710000" />
+      <workItem from="1703256369029" duration="1717000" />
+      <workItem from="1703258230952" duration="62000" />
+    </task>
+    <task id="LOCAL-00001" summary="New repositories:&#10;ho implementato le bean, le view e le i controller del caso d'uso createNutrtionalPlan">
+      <option name="closed" value="true" />
+      <created>1703256853302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703256853302</updated>
+    </task>
+    <task id="LOCAL-00002" summary="New repositories:&#10;ho implementato le bean, le view e le i controller del caso d'uso createNutrtionalPlan">
+      <option name="closed" value="true" />
+      <created>1703256957373</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1703256957373</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New repositories:&#10;ho implementato le bean, le view e le i controller del caso d'uso createNutrtionalPlan" />
+    <option name="LAST_COMMIT_MESSAGE" value="New repositories:&#10;ho implementato le bean, le view e le i controller del caso d'uso createNutrtionalPlan" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
