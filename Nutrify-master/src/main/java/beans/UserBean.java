@@ -2,7 +2,7 @@ package beans;
 
 public class UserBean {
     private String username;
-    private final PersonalInformationBean personalInfo;
+   // private final PersonalInformationBean personalInfo;
     private String type;
 
 /*

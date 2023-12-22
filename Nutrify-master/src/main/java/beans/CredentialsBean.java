@@ -7,7 +7,7 @@ public class CredentialsBean {
 
     private CredentialsBean() {}
 
-    public static CredentialsBean ctorWithSyntaxCheck(String email, String password) throws InvalidCredentialsException, EmptyFieldsException {
+    public static CredentialsBean ctorWithSyntaxCheck(String email, String password) {
         /*This is a constructor with syntax check and is used by view*/
         CredentialsBean credentialsBean = new CredentialsBean();
         //credentialsBean.setEmail(email);
